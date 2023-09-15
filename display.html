@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <title>Display utilities</title>
+    <!----------Bootstrap CSS-------------->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="p-3 d-lg-inline-block pink">
+            <h2>Col A</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="p-3 d-lg-inline-block green">
+            <h2>Col B</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 pink">
+                <h2>Col A</h2>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, minus.
+            </div>
+            <!--------hidding at mobile screen------->
+            <div class="col-md-3 d-none d-sm-block green ">
+                <h2>Col B</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur necessitatibus, magni odit sint
+                ipsam
+                libero.
+            </div>
+            <!------------hidding at big screen-->
+            <div class="col-md-3 d-bock d-sm-none blue">
+                <h2>Col C</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </div>
+            <!--------------Display print-------->
+            <div class="col-md-3 d-none d-print-block orange">
+                <h2>Col D</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </div>
+        </div>
+
+    </div>
+    <!---------Without col and row class display flex-->
+    <div class="container">
+        <div class="d-flex " style="border: 3px solid blue">
+            <div class=" order-3  pink p-3">Col A</div>
+            <div class=" order-1 green p-3">Col B</div>
+            <div class=" order-2 blue p-3">Col C</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
